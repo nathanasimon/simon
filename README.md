@@ -115,9 +115,11 @@ simon/
 
 ## Installation
 
-### With bun (recommended)
+### With npm or bun (recommended)
 
 ```bash
+npm install -g simon-memory
+# or
 bun install -g simon-memory
 ```
 
