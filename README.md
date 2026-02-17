@@ -115,19 +115,48 @@ simon/
 
 ## Installation
 
+### With bun (recommended)
+
 ```bash
-# Clone
+bun install -g simon-memory
+```
+
+Simon auto-creates a Python virtualenv on first run. Just needs Python 3.11+ on your system.
+
+### With pacman (Arch Linux)
+
+```bash
 git clone https://github.com/nathanasimon/simon
 cd simon
+makepkg -si
+```
 
-# Install
+### With pip
+
+```bash
+pip install git+https://github.com/nathanasimon/simon
+```
+
+### From source
+
+```bash
+git clone https://github.com/nathanasimon/simon
+cd simon
 pip install -e ".[dev]"
+```
 
-# Set up PostgreSQL
+### Database Setup
+
+Simon needs PostgreSQL:
+
+```bash
 createdb simon
 psql simon < schema.sql
+```
 
-# Configure (optional — defaults work for local dev)
+### Configuration (optional — defaults work for local dev)
+
+```bash
 mkdir -p ~/.config/simon
 cat > ~/.config/simon/config.toml << 'EOF'
 [general]

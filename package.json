@@ -1,0 +1,25 @@
+{
+  "name": "simon-memory",
+  "version": "0.1.0",
+  "description": "Memory for Claude Code — records sessions, injects context, generates skills",
+  "bin": {
+    "simon": "./bin/simon.mjs"
+  },
+  "scripts": {
+    "postinstall": "node ./bin/check-python.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanasimon/simon"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "memory",
+    "context",
+    "skills",
+    "ai"
+  ],
+  "author": "Nathan Simon",
+  "license": "MIT"
+}
